@@ -9,6 +9,7 @@ data = (12,
 48,
 51,
 54,
+54,
 59,
 60,
 60,
@@ -21,12 +22,14 @@ data = (12,
 118,
 123,
 143,
+147,
+90,
 )
 
 commutes = pd.Series(data)
 
 commutes.plot.hist(grid=True, bins=10, rwidth=0.9,
                    color='#607c8e')
-plt.title('Time between reinfections')
+plt.title('Days between reinfections')
 plt.ylabel('Counts')
-plt.xlabel('Reinfection interval')
+plt.xlabel('Reinfection interval, days')
